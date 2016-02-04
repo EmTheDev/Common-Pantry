@@ -13,7 +13,7 @@ Team Members
 3. Miles Bainbridge
 4. Frank Koutoulas
 
-Tearms of Usage/License
+Terms of Usage/License
 -------------------------------------------------
 1. Yummly
 2. Spoonacular
