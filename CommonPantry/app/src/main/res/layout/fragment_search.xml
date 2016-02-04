@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@drawable/pantry1"
+    android:id="@+id/layout_resource"
+    android:theme="@android:style/Theme.Holo.Dialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#AA000000"
+        android:textAlignment="center"
+        android:text="Enter an ingredient to search for:"
+        android:textSize="25dp"
+        android:id="@+id/instructions"
+        />
+
+    <EditText
+
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="35dp"
+        android:layout_toLeftOf="@+id/searchButton"
+        android:layout_below="@+id/instructions"
+        android:textSize="20dp"
+        android:text="i.e. tomato"
+        android:layout_marginTop="6dp"
+        android:textColor="#88000000"
+        android:shadowColor="#FF000000"
+        >
+
+
+    </EditText>
+
+    <Button
+        android:id="@+id/searchButton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/instructions"
+        android:text="Search"
+        >
+
+
+    </Button>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/searchButton"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

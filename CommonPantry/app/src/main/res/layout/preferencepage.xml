@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Check all in which you would like to exclude"
+        android:id="@+id/textView2"
+        android:textSize="30dp"
+        />
+
+    <CheckBox
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:text="Dairy"
+    android:id="@+id/dairy"
+    android:textSize="26dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="40dp"
+    android:onClick="onCheckboxClicked"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/testView"/>
+
+
+
+    <CheckBox
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Egg"
+        android:id="@+id/egg"
+        android:textSize="26dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Gluten"
+        android:id="@+id/gluten"
+        android:textSize="26dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="onCheckboxClicked"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button10"
+        android:layout_gravity="right"/>
+
+    <CheckBox
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Peanut"
+        android:id="@+id/peanut"
+        android:textSize="26dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="onCheckboxClicked"/>
+
+
+    <CheckBox
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Seafood"
+        android:id="@+id/seaFood"
+        android:textSize="26dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Sesame"
+        android:id="@+id/sesame"
+        android:textSize="26dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Soy"
+        android:id="@+id/soy"
+        android:textSize="26dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Tree Nut"
+        android:id="@+id/treeNut"
+        android:textSize="26dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Wheat"
+        android:id="@+id/wheat"
+        android:textSize="26dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="onCheckboxClicked"/>
+
+
+
+
+</LinearLayout>

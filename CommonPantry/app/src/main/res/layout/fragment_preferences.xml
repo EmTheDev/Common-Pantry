@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:focusableInTouchMode="false"
+    android:longClickable="false"
+    android:background="@drawable/egg"
+    android:layout_marginTop="?attr/actionBarSize"
+    >
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:id="@+id/frameLayout">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ojcogs3"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitEnd"
+            android:layout_gravity="right|bottom"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Select all allergies that apply to you. They will be excluded from your search."
+            android:id="@+id/textView2"
+            android:textSize="20dp"
+            android:textColor="#212121"
+            android:textStyle="bold|italic"
+            android:textIsSelectable="false"
+            android:password="false"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_alignParentTop="true"
+            />
+
+
+    </FrameLayout>
+
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dairy"
+        android:id="@+id/dairy"
+        android:textSize="25sp"
+        android:onClick="onCheckboxClicked"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:singleLine="false"
+        android:buttonTint="#212121"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Egg"
+        android:id="@+id/egg"
+        android:textSize="25sp"
+        android:onClick="onCheckboxClicked"
+        android:buttonTint="#212121"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_below="@+id/dairy"
+
+        android:layout_marginLeft="70dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gluten"
+        android:id="@+id/gluten"
+        android:textSize="25sp"
+        android:onClick="onCheckboxClicked"
+        android:buttonTint="#212121"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_below="@+id/egg"
+
+        android:layout_marginLeft="70dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peanut"
+        android:id="@+id/peanut"
+        android:textSize="25sp"
+        android:onClick="onCheckboxClicked"
+        android:buttonTint="#212121"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_below="@+id/gluten"
+
+        android:layout_marginLeft="70dp"
+        />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seafood"
+        android:id="@+id/seaFood"
+        android:textSize="25sp"
+        android:onClick="onCheckboxClicked"
+        android:buttonTint="#212121"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_below="@+id/peanut"
+
+        android:layout_marginLeft="70dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sesame"
+        android:id="@+id/sesame"
+        android:textSize="25sp"
+        android:onClick="onCheckboxClicked"
+        android:buttonTint="#212121"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_below="@+id/seaFood"
+
+        android:layout_marginLeft="70dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soy"
+        android:id="@+id/soy"
+        android:textSize="25dp"
+        android:onClick="onCheckboxClicked"
+        android:buttonTint="#212121"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_below="@+id/sesame"
+
+        android:layout_marginLeft="70dp"
+        />
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Tree Nut"
+        android:id="@+id/treeNut"
+        android:textSize="25dp"
+        android:onClick="onCheckboxClicked"
+        android:buttonTint="#212121"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_below="@+id/soy"
+
+        android:layout_marginLeft="70dp"
+        />
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Wheat"
+        android:id="@+id/wheat"
+        android:textSize="25dp"
+        android:onClick="onCheckboxClicked"
+        android:buttonTint="#212121"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_below="@+id/treeNut"
+
+        android:layout_marginLeft="70dp"
+
+        />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Submit Preferences"
+        android:id="@+id/button10"
+        android:layout_gravity="center_horizontal"
+        android:background="#e4a915"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+
+
+</RelativeLayout>

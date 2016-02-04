@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- <item name="android:colorBackground">@color/olive</item>-->
+        <!--<item name="android:buttonStyle">@style/OurButtonStyle</item> -->
+        <item name="android:spinnerStyle">@style/Selector</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <color name="olive">#556b2f</color>
+    <color name="textGold">#ffe27e</color>
+    <color name="gungrey">#9C9C9C</color>
+    <color name="orange">#ffb347</color>
+
+
+    <style name="OurButtonStyle" parent="android:Widget.Button">
+        <item name="android:background">@color/orange</item>
+        <item name="android:padding">10dp</item>
+        <!-- This line here helped us fix the issue with the buttons colliding with the textboxes, but ideally, we want to change a single thing and fix all the widgets and not have to use padding here -->
+    </style>
+    <style name="Selector" parent="android:Widget.Spinner">
+        <item name="android:background">@color/gungrey</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+
+</resources>
